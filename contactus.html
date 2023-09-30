@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Otheniel Enterprises</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script.js">
+    <script src="https://kit.fontawesome.com/00c62c196f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="background-clip">
+    <video autoplay muted loop>
+    <source src="images/backgroundclip1.mp4" type="video/mp4">
+  </video>
+</div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+   <h3 style="color: #EC8B5E">Contact Us</h3>
+    <main>
+      <section class="contact">
+
+        <div class="map-container">
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.812683270139!2d36.81755337555933!3d-1.286443835627503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d7362c02f9%3A0x9fdd5f108f666e62!2sPioneer%20Koinange%20Street!5e0!3m2!1sen!2ske!4v1683187571665!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-form" >
+          <form method="POST" action="submit.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-links">
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+        </ul>
+      </div>
+      <p>&copy; Otheniel Enterprises 2023. All Rights Reserved.</p>
+    </footer>
+
+  </body>
+</html>

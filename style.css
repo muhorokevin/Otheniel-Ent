@@ -1,0 +1,319 @@
+body{
+  margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+
+}
+.background-clip video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+header {
+	background-color: transparent;
+	color: #EC8B5E;
+	padding: 20px;
+}
+header img{
+  padding-right: 50%;
+}
+header h1 {
+	margin: 0;
+  float :right;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #EC8B5E;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: blue;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-image-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.circular-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+h1{
+  color: #EC8B5E;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px transparent;
+  border-radius: 5px;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.hero:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #EC8B5E;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.hero h2,
+.hero p {
+  color: #EC8B5E;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: blue;
+}
+
+.mid-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* --------------------------------------------contactus-------------------------------- */
+.main {
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.map-container {
+  flex: 1;
+}
+
+.map {
+  height: 400px;
+}
+
+.contact-form {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #EC8B5E;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #EC8B5E;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.social-links ul li {
+  margin-right: 10px;
+}
+
+.fa-brands,
+.fa-regular {
+  font-size: 20px;
+}
+.map {
+  width: auto;
+  height: auto;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.form-container {
+  width: 50%;
+  padding: 20px;
+}
+
+.map:hover {
+  opacity: 0.8;
+}
+.contact-form button[type="submit"] :hover {
+  opacity: 0.8;
+}
+.contact h3{
+  color: #EC8B5E;
+}
+
+/* ----------------------------------------------services------------------ */
+in the html file - service.html
+/* -----------------------------------------footer------------------------------------ */
+footer {
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+footer ul li {
+	margin: 0 10px;
+}
+
+footer ul li i {
+	color: #EC8B5E;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+footer ul li i:hover {
+	color: blue;
+}
+footer p{
+  text-align: center;
+  color: #EC8B5E;
+}
+
+/* -------------------------------------media------------------- */
+/* CSS for tablet */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .logo h1 {
+    font-size: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .map-container,
+  .contact-form {
+    margin: 0;
+  }
+}
+
+/* CSS for mobile */
+@media screen and (max-width: 480px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .contact-form button[type="submit"] {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
